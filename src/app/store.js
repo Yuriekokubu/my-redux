@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import dashboardReducer from '../features/Dashboard/dashboardSlice';
+import appSideNavSliceReducer from '../features/AppSideNav/appSideNavSlice';
+import usersReducer from '../features/Users/usersSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    dashboard: dashboardReducer,
+    users: usersReducer,
+    appSideNav: appSideNavSliceReducer,
   },
 });
